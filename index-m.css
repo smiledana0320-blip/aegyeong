@@ -1,0 +1,376 @@
+@charset "utf-8";
+
+.pc {
+  display: none;
+}
+
+.mo {
+  display: block;
+}
+.maintitle {
+  padding: 0 0 25px;
+  font-size: 41.5px;
+  font-weight: bold;
+  color: #161616;
+}
+
+header {
+  align-items: center;
+}
+.wrap {
+  padding: 0 20px;
+}
+
+h1 {
+  width: 100px;
+  height: 16px;
+}
+.utill p {
+  padding-top: 5px;
+  margin-right: 20px;
+}
+
+.utill p img {
+  width: 17px;
+  height: 17px;
+}
+
+.srch img {
+  display: block;
+  width: 17px;
+  height: 17px;
+  margin-top: 8px;
+}
+
+.bammenu {
+  position: relative;
+  width: 18px;
+  height: 12px;
+  margin-top: 10px;
+}
+
+.bammenu a span {
+  position: absolute;
+  display: block;
+  border-bottom: 2px solid #fff;
+  width: 18px;
+  height: 2px;
+}
+
+.fixed .bammenu a span {
+  border-bottom: 2px solid #000;
+}
+
+.bammenu a span:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+
+.bammenu a span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+.bammenu a span:nth-child(3) {
+  bottom: 0;
+  left: 0;
+}
+
+/********main***********/
+.main1 {
+  height: 933px;
+  overflow: hidden;
+  margin-bottom: 79px;
+}
+
+.main1 img {
+  width: 100%;
+}
+
+.main2 {
+  height: 980px;
+  position: relative;
+  justify-content: left;
+  flex-direction: column;
+}
+
+.main2 h2 {
+  font-size: 37.58px;
+  letter-spacing: -1.38px;
+  font-weight: bold;
+  line-height: 48px;
+  padding: 0 20px 31px;
+}
+
+.subtitle2 > li:hover .on,
+.subtitle2 .environ {
+  display: flex;
+}
+
+.subtitle2 {
+  gap: 0;
+  /* align-items: center; */
+  flex-direction: column;
+}
+
+.subtitle2 > li {
+  height: 62.39px;
+  line-height: 62.39px;
+  font-size: 14.56px;
+  text-align: left;
+  background: url(images/mo_icon_ham_arrow_down\ .png) no-repeat 95% 50%;
+  background-size: 12px 8px;
+}
+
+.main2 .subtitle2 > li::after,
+.subtitle2 > li:first-child::before {
+  display: block;
+  content: "";
+  width: 767px;
+  border-top: 1px solid #e5e5e5;
+  padding: 0;
+}
+
+.subtitle2 > li small {
+  display: inline-block;
+  width: 140px;
+  font-size: 14.56px;
+  padding-left: 31px;
+}
+
+.subtitle2 > li span {
+  display: inline-block;
+  width: 55px;
+}
+
+.subtitle2 ul {
+  display: none;
+}
+
+.subtitle2 li:hover span {
+  border-bottom: none;
+}
+
+.subtitle2 .environ,
+.social,
+.goverm {
+  justify-content: flex-start;
+  flex-direction: column-reverse;
+  padding: 0;
+  border-top: none;
+  top: 315px;
+}
+
+.environ li:first-child,
+.social li:first-child,
+.goverm li:first-child {
+  font-size: 17px;
+  line-height: 23px;
+  font-weight: bold;
+  text-align: left;
+  padding: 26px 0 30px 20px;
+}
+
+.environ li:nth-child(2),
+.social li:nth-child(2),
+.goverm li:nth-child(2) {
+  width: 740px;
+  height: 460px;
+}
+
+.direct a {
+  top: 130px;
+  left: 26px;
+  height: 38px;
+  font-size: 11px;
+  line-height: 38px;
+  padding: 0 0 0 20px;
+  text-align: left;
+}
+
+.direct a img {
+  width: 50%;
+  padding: 0 0 0 40px;
+}
+
+/*******main3*******/
+.main3,
+.main4,
+.main5 {
+  flex-direction: column;
+  position: relative;
+  height: 920px;
+  padding: 130px 20px 78px;
+  font-size: 14.5px;
+  gap: 0;
+}
+
+.mtext > p {
+  padding: 0 0 10px;
+  font-size: 14.5px;
+}
+
+.mainimg {
+  gap: 12px;
+}
+
+.mainimg a img {
+  width: 383.5px;
+  height: 488px;
+}
+
+.mtext .direct a {
+  top: 820px;
+}
+
+.main6 {
+  font-size: 13px;
+  background: #fafafa;
+}
+
+.news {
+  grid-template-columns: 707px;
+  grid-template-rows: 120px 471px 130px;
+  grid-template-areas: "title" "img" "text";
+  padding: 72px 20px 83px;
+}
+
+.newsimg {
+  grid-row: 1/2;
+  grid-area: img;
+}
+
+.newsimg a img {
+  width: 707px;
+  height: 471px;
+}
+.newstitle {
+  grid-area: title;
+}
+.newstitle small {
+  font-size: 12px;
+  margin: 0 0 31px;
+}
+
+.newstitle h3 {
+  font-size: 18px;
+  padding: 0 0 10px;
+}
+
+.newstitle p {
+  font-size: 14.5px;
+  padding: 0 0 16.5px;
+}
+
+.newstext {
+  grid-area: text;
+}
+.main6 .newstext {
+  margin: 0;
+  border-top: none;
+  padding-top: 26px;
+}
+
+/***footer*****/
+footer {
+  position: relative;
+  padding: 20px 0px;
+}
+footer p {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0;
+}
+
+footer p img {
+  width: 104px;
+  height: 17px;
+  margin: 33px 0;
+}
+footer p span {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+  margin-bottom: 99px;
+}
+
+.foot_middle {
+  flex-direction: column;
+  align-items: stretch;
+  padding-bottom: 20px;
+}
+.user {
+  flex-direction: column;
+  font-size: 12px;
+  font-weight: 500;
+  padding-bottom: 21px;
+}
+.user li a {
+  margin: 0 23px 15px 0;
+}
+
+.sns li {
+  margin: 0 0 0 0px;
+}
+
+.sns li:first-child a {
+  background: url(images/mo_ft_youtube.png) no-repeat 100%;
+}
+
+.sns li:nth-child(2) a {
+  background: url(images/mo_ft_facebook.png) no-repeat 100%;
+}
+
+.sns li:nth-child(3) a {
+  background: url(images/mo_ft_insta.png) no-repeat 100%;
+}
+
+.sns li:nth-child(4) a {
+  background: url(images/mo_ft_naver.png) no-repeat 100%;
+}
+
+.sns li:nth-child(5) a {
+  background: url(images/mo_ft_txt.png) no-repeat 100%;
+  width: 100px;
+  height: 42px;
+  background-size: 100px 42px;
+}
+
+.sns li:first-child a,
+.sns li:nth-child(2) a,
+.sns li:nth-child(3) a,
+.sns li:nth-child(4) a {
+  width: 40px;
+  height: 40px;
+  background-size: 40px 40px;
+  background-position: 100%;
+}
+
+footer address {
+  font-size: 12px;
+}
+
+footer address span {
+  padding-right: 12px;
+}
+
+footer .family {
+  width: 104px;
+  height: 41px;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 10px;
+  text-align: center;
+  color: #161616;
+  background: #fadcdd;
+  border-radius: 50px;
+  margin-left: 0px;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 33px;
+  right: 0;
+  cursor: pointer;
+  appearance: unset;
+}
